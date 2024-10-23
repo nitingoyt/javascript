@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Temperature Converter</h1>
+
+      <div class="content">
+        <div class="left">
+          <label for="temperatureInput">Enter Temperature</label>
+          <input type="number" name="temp-input" id="temperatureInput" placeholder="Enter value" />
+          <select id="fromUnit" class="select-box">
+            <option value="">Select Unit</option>
+            <option id="celsiusFrom" value="celsius">Celsius</option>
+            <option id="fahrenheitFrom" value="fahrenheit">Fahrenheit</option>
+            <option id="kelvinFrom" value="kelvin">Kelvin</option>
+          </select>
+        </div>
+
+        <!-- <div class="icon-container">
+          <img src="https://img.icons8.com/ios-filled/50/000000/transfer.png" alt="convert" />
+        </div> -->
+
+        <div class="right">
+          <label for="toUnit">Convert Into</label>
+          <select id="toUnit" class="select-box">
+            <option value="">Select Unit</option>
+            <option id="celsiusTo" value="celsius">Celsius</option>
+            <option id="fahrenheitTo" value="fahrenheit">Fahrenheit</option>
+            <option id="kelvinTo" value="kelvin">Kelvin</option>
+          </select>
+          <div id="result" class="result-box">Result: <span id="output-value">0</span></div>
+        </div>
+      </div>
+
+      <button id="Convert-button" class="Convert-button">Convert</button>
+    </div>
+
+    <script src="scriptCal.js" type="text/javascript"></script>
+  </body>
+</html>

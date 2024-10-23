@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Tags to select element in JS</title>
+
+</head>
+<body>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <ul>
+        <li>List a</li>
+        <li>List b</li>
+        <li>List c</li>
+    </ul>
+    <h2>Heading 1</h2>
+    <div id ="div1">
+    <p>Paragraph 1</p>
+    <h2>Heading 2</h2>
+    <p calss="select">Paragraph 2</p>
+    <h2>Heading 3</h2>
+    <p>Paragraph 3</p>
+    </div>
+
+    <div id="divtag">
+        <p>This is a tag</p>
+    </div>
+
+    <!-- <script>
+        // slecting parent
+        let elm = document.getElementById("intro")
+        let prt = elm.parentElement;
+        prt.innerHTML = "hello"
+        console.log(elm)
+
+    </script> -->
+
+    <!-- inner html uses -->
+     <script>
+        let elem = document.getElementById("intro")
+
+        elem.innerHTML = "<h1>A heading</h1>";
+        
+     </script>
+
+    <!-- <script>
+        
+        let div1 = document.getElementById("div1")
+        let element = div1.getElementByTagName("h2");
+        // element = document.querySelector("select")
+        // element.innerHTML = "Hello";
+
+
+        for(let i = 0; i < element.length; i++){
+            element[i].innerHTML = "Hello";
+        }
+    </script> -->
+
+
+
+</body>
+</html>

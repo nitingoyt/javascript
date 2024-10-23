@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Management System</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the CSS file -->
+    <style>
+      table {
+        width: 100%; /* Full width of the page */
+        border-collapse: collapse; /* Merge borders for cleaner look */
+      }
+      th {
+        padding: 20px 40px; /* Increase padding for more space */
+        text-align: left; /* Align the text to the left */
+      }
+      td {
+        padding: 20px 40px; /* Increase padding for more space */
+      }
+      th,
+      td {
+        border: 2px solid #ccc; /* Add border to cells */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order Management System</h1>
+      <div class="product-list">
+        <div class="product-drop">
+          <select id="productSelect">
+            <option value="none">Select a Product</option>
+          </select>
+        </div>
+        <div class="product-price">
+          Price: $<span id="priceDisplay">0</span>
+        </div>
+        <div class="product-qty">
+          Quantity:
+          <input type="number" id="qtyInput" value="1" min="1" max="10" />
+        </div>
+        <div class="product-total-price-with-qty">
+          Total: $<span id="totalDisplay">0</span>
+        </div>
+        <div class="add-product">
+          <button id="addButton">Add Product</button>
+        </div>
+      </div>
+
+      <div class="user-order-list" id="orderList">
+        <h2>Your Order</h2>
+        <!-- Each added product will be displayed here as an order-item -->
+        <table id="table-list">
+          <tr>
+            <thead><td>Food Items</td>
+            <td>Price</td>
+            <td>Qty</td>
+            <td>Total</td>
+            <td>Action</td>
+          </tr></thead>
+            
+          <tfoot>
+            <tr id="last-cell" class="last">
+              <td colspan="3">Sub-Total</td>
+              <!-- <td></td>
+              <td></td> -->
+              <td id="Sub-Total"></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- Link to the JavaScript file -->
+  </body>
+</html>

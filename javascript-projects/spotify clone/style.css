@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;800&display=swap");
+
+body {
+  background-color: antiquewhite;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  font-family: "Kalam", cursive;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+}
+
+.brand img {
+  width: 86px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+/* Updated container to align elements to the left */
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Rethink Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align children to the top */
+  align-items: flex-start; /* Align content to the left */
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: left; /* Ensure heading is aligned left */
+}
+
+/* Updated styling for song items */
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  width: 130%; /* Increase width to make items larger */
+  color: black;
+  margin: 12px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 34px;
+  padding: 10px;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.songItemContainer {
+  margin-top: 10px;
+}
+
+.songListPlay {
+  display: flex;
+  align-items: center;
+}
+
+.songListPlay i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.timestamp {
+  margin: 0 23px;
+}
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 95px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+
+.icons i {
+  cursor: pointer;
+  color: white;
+}
+
+#myProgressBar {
+  width: 80vw;
+  appearance: none; /* Remove default styles */
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+#myProgressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#myProgressBar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 9vw;
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity is ease-in;
+}
